@@ -30,7 +30,7 @@ resource "aws_instance" "example" {
   }
 }
 
-#W powyższym kodzie najpierw definiujemy dostawcę, 
+#W powyższym kodzie najpierw definiujemy dostawcę,  
 #w tym przypadku AWS, wraz z regionem, 
 #który chcemy wykorzystać. Następnie definiujemy zasoby, 
 #w tym przypadku instancję EC2, z określonym AMI i typem instancji, 
