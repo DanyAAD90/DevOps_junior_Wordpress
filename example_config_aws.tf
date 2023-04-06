@@ -1,3 +1,5 @@
+# HCL (HashiCorp Configuration Language) format
+
 # Definiowanie providerów
 provider "aws" {
   region = "us-west-2"
