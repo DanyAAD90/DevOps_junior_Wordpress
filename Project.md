@@ -33,3 +33,8 @@ Login to proxmox:\
 `password: during installation`
 
 Went to firefox and write 192.168.122.63:8006 and hit enter. Then login with root account with a password.
+
+I installed wordpress from here: https://mirror.umd.edu/turnkeylinux/images/proxmox/ with name:\
+`debian-10-turnkey-wordpress_16.1-1_amd64.tar.gz`\
+
+I Created LXC container with LAMP
