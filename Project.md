@@ -51,4 +51,5 @@ Wordpress configuration:\
 `https://192.168.122.122/wp-login`
 
 Zabbix configuration:\
-`https://github.com/takala-jp/zabbix-proxmox`
+`https://github.com/takala-jp/zabbix-proxmox`\
+`https://geekistheway.com/2022/12/31/monitoring-proxmox-ve-using-zabbix-agent/`
