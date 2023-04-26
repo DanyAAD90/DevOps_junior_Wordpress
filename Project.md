@@ -60,7 +60,7 @@ Zabbix configuration:\
 
 need to installed "zabbix-agent2" because ubuntu 23.04 is wihout LTS.
 
-Current issue: zabbix-server-mysql : need libldap-2.5-0 (>= 2.5.4) but it is not possible to install. Recommend "snmpd" but it is not install.
+Current issue: Zabbix server does not work. zabbix-server-mysql : need libldap-2.5-0 (>= 2.5.4) but it is not possible to install. Recommend "snmpd" but it is not install.
 
 Docker for wordpress:\
 `https://wpart.pl/docker-dla-wordpress/`\
