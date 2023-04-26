@@ -19,7 +19,7 @@ To install Proxmox on ubuntu i used qemu:\
 `reboot`\
 `sudo virt-manager`
 
-in qemu i created new VM with existing proxmox iso with distro name "Debian 10".
+In qemu i created new VM with existing proxmox iso with distro name "Debian 10".
 Proxmox configuration:\
 `enp1s0 interface`\
 `Hostname (FQDN): devops.local`\
@@ -27,3 +27,9 @@ Proxmox configuration:\
 `GW: 192.168.122.1`\
 `DNS: 192.168.122.1`\
 `Filesystem: ext4`\
+
+Login to proxmox:
+`login: root`\
+`password: during installation`\
+
+Went to firefox and write 192.168.122.63:8006 and hit enter. Then login with root account with a password.
