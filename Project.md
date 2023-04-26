@@ -45,3 +45,6 @@ Useful materials you can find here:\
 
 Wordpress configuration:\
 `net0 192.168.122.122/24, gw=192.168.122.1`
+`MySQL admin password: `\
+`WEB Shell: 12320`
+`https://192.168.122.122/wp-login`
