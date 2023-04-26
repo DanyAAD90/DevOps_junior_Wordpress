@@ -19,4 +19,4 @@ To install Proxmox on ubuntu i used qemu:\
 `reboot`\
 `sudo virt-manager`
 
-in qemu i created new VM with existing proxmox iso with distro "Debian 10"
+in qemu i created new VM with existing proxmox iso with distro name "Debian 10"
