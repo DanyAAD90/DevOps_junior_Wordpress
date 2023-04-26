@@ -48,3 +48,8 @@ Wordpress configuration:\
 `net0 192.168.122.122/24, gw=192.168.122.1`\
 `MySQL admin password: `\
 `https://192.168.122.122/wp-login`
+
+Zabbix configuration:\
+``\
+``\
+``
