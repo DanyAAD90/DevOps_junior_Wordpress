@@ -12,3 +12,9 @@ C --> F(Docker)
 Configuration on ubuntu 23.04 shows:\
 `inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp3s0`
 
+To install Proxmox on ubuntu i used qemu:\
+`sudo apt update`\
+`sudo apt full-upgrade`\
+`sudo apt install virt-manager`\
+`reboot`\
+`sudo virt-manager`\
