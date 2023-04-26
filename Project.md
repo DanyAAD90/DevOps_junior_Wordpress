@@ -17,4 +17,4 @@ To install Proxmox on ubuntu i used qemu:\
 `sudo apt full-upgrade`\
 `sudo apt install virt-manager`\
 `reboot`\
-`sudo virt-manager`\
+`sudo virt-manager`
