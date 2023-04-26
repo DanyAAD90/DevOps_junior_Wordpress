@@ -10,5 +10,5 @@ E --> G(Display website)
 C --> F(Docker)
 ```
 Configuration on ubuntu 23.04 shows:\
-`inet 192.168.0.47/24 brd 192.168.0.255 scope global dynamic noprefixroute enp3s0`
+`inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp3s0`
 
