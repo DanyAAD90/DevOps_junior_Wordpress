@@ -57,3 +57,6 @@ Zabbix configuration:\
 `https://beitadmin.pl/tag/zabbix/`\
 
 `https://technologyrss.com/how-to-install-zabbix-server-6-2-on-ubuntu-22-04/`\
+
+Docker for wordpress:\
+`https://wpart.pl/docker-dla-wordpress/`\
