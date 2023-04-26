@@ -58,5 +58,7 @@ Zabbix configuration:\
 
 `https://technologyrss.com/how-to-install-zabbix-server-6-2-on-ubuntu-22-04/`\
 
+need to installed "zabbix-agent2" because ubuntu 23.04 is wihout LTS.
+
 Docker for wordpress:\
 `https://wpart.pl/docker-dla-wordpress/`\
