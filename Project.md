@@ -54,13 +54,13 @@ Zabbix configuration:\
 `https://github.com/takala-jp/zabbix-proxmox`\
 `https://geekistheway.com/2022/12/31/monitoring-proxmox-ve-using-zabbix-agent/`\
 `https://github.com/kvaps/zabbix-linux-container-template`\
-`https://beitadmin.pl/tag/zabbix/`\
+`https://beitadmin.pl/tag/zabbix/`
 
-`https://technologyrss.com/how-to-install-zabbix-server-6-2-on-ubuntu-22-04/`\
+`https://technologyrss.com/how-to-install-zabbix-server-6-2-on-ubuntu-22-04/`
 
 need to installed "zabbix-agent2" because ubuntu 23.04 is wihout LTS.
 
 Current issue: Zabbix server does not work. zabbix-server-mysql : need libldap-2.5-0 (>= 2.5.4) but it is not possible to install. Recommend "snmpd" but it is not install.
 
 Docker for wordpress:\
-`https://wpart.pl/docker-dla-wordpress/`\
+`https://wpart.pl/docker-dla-wordpress/`
