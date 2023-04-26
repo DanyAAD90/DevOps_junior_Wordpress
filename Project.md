@@ -37,14 +37,13 @@ Went to firefox and write 192.168.122.63:8006 and hit enter. Then login with roo
 I installed wordpress from here: https://mirror.umd.edu/turnkeylinux/images/proxmox/ with name:\
 `debian-10-turnkey-wordpress_16.1-1_amd64.tar.gz`
 
-I Created LXC container with LAMP
+I Created LXC container with Wordpress
 
 Useful materials you can find here:\
 `https://www.youtube.com/watch?v=nW7_jnBNIRU LAMP LXC`\
 `https://www.youtube.com/watch?v=OToQ4LAHz6I WORDPRESS LXC`
 
 Wordpress configuration:\
-`net0 192.168.122.122/24, gw=192.168.122.1`
+`net0 192.168.122.122/24, gw=192.168.122.1`\
 `MySQL admin password: `\
-`WEB Shell: 12320`
 `https://192.168.122.122/wp-login`
