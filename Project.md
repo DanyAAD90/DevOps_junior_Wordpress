@@ -8,7 +8,7 @@ C --> D(Proxmox)
 D --> E(LXC Wordpress - including PHP+MySQL)
 E --> G(Display website)
 C --> F(Docker)
-D --> H
+C --> H
 H(Zabbix) --> E
 ```
 Configuration on ubuntu 23.04 shows:\
@@ -54,4 +54,6 @@ Zabbix configuration:\
 `https://github.com/takala-jp/zabbix-proxmox`\
 `https://geekistheway.com/2022/12/31/monitoring-proxmox-ve-using-zabbix-agent/`\
 `https://github.com/kvaps/zabbix-linux-container-template`\
-`https://beitadmin.pl/tag/zabbix/`
+`https://beitadmin.pl/tag/zabbix/`\
+
+`https://technologyrss.com/how-to-install-zabbix-server-6-2-on-ubuntu-22-04/`\
