@@ -25,4 +25,5 @@ Proxmox configuration:\
 `Hostname (FQDN): devops.local`\
 `IPv4: 192.168.122.63 /24`\
 `GW: 192.168.122.1`\
-`DNS: 192.168.122.1`
+`DNS: 192.168.122.1`\
+`Filesystem: ext4`\
