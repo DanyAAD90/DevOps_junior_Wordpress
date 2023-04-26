@@ -50,6 +50,4 @@ Wordpress configuration:\
 `https://192.168.122.122/wp-login`
 
 Zabbix configuration:\
-``\
-``\
-``
+`https://github.com/takala-jp/zabbix-proxmox`
