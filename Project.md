@@ -43,5 +43,5 @@ Useful materials you can find here:\
 `https://www.youtube.com/watch?v=nW7_jnBNIRU LAMP LXC`\
 `https://www.youtube.com/watch?v=OToQ4LAHz6I WORDPRESS LXC`
 
-Wordpress configuration:
-`net0 192.168.122.122/24, gw=192.168.122.1`\
+Wordpress configuration:\
+`net0 192.168.122.122/24, gw=192.168.122.1`
