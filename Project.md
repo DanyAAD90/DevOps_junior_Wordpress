@@ -28,8 +28,8 @@ Proxmox configuration:\
 `DNS: 192.168.122.1`\
 `Filesystem: ext4`\
 
-Login to proxmox:
+Login to proxmox:\
 `login: root`\
-`password: during installation`\
+`password: during installation`
 
 Went to firefox and write 192.168.122.63:8006 and hit enter. Then login with root account with a password.
