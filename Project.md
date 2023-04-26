@@ -5,6 +5,7 @@ graph LR
 A[Linux MINT 21.1] --> B(Virtualbox 6.1)
 B --> C(Ubuntu23.04)
 C --> D(Proxmox)
+C --> F(Docker)
 D --> E(Wordpress - including PHP+MySQL)
 ```
 Configuration on ubuntu 23.04 shows:\
