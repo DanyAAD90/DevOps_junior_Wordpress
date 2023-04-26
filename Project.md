@@ -53,4 +53,5 @@ Wordpress configuration:\
 Zabbix configuration:\
 `https://github.com/takala-jp/zabbix-proxmox`\
 `https://geekistheway.com/2022/12/31/monitoring-proxmox-ve-using-zabbix-agent/`\
-`https://github.com/kvaps/zabbix-linux-container-template`
+`https://github.com/kvaps/zabbix-linux-container-template`\
+`https://beitadmin.pl/tag/zabbix/`
