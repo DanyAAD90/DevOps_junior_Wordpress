@@ -6,6 +6,7 @@ A[Linux MINT 21.1] --> B(Virtualbox 6.1)
 B --> C(Ubuntu23.04)
 C --> D(Proxmox)
 D --> E(Wordpress - including PHP+MySQL)
+E --> G(Display website)
 C --> F(Docker)
 ```
 Configuration on ubuntu 23.04 shows:\
