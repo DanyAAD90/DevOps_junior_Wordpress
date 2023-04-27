@@ -66,5 +66,7 @@ Try to install CentOS 8 stream as VM in proxmox and then zabbix server on it:\
 `https://computingforgeeks.com/how-to-install-zabbix-on-rhel-centos-stream/`\
 Its impossible install vm on proxmox on kvm, there is an error `kvm: warning: host doesn't support requested feature: CPUID.01H:EDX.vme [bit]1`
 
+Install CentOS as lxc in proxmox:\
+`https://docs.ossii.com.tw/books/oxoffice-online-technical-manual/page/installation-guide-for-centos-7-in-pve-lxc-%28community-edition%29`\
 Docker for wordpress:\
 `https://wpart.pl/docker-dla-wordpress/`
