@@ -102,7 +102,8 @@ Pro-tip!
 
 When steps above are finished, you can use "More"→"Convert to template" to generate new LXC template that contains OxOOL Community edition.
 
-
+Install Zabbix on CT centos7 core:\
+`https://computingforgeeks.com/how-to-install-zabbix-server-on-centos-7/`\
 
 
 
