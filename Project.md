@@ -73,7 +73,8 @@ Install CentOS as CT lxc in proxmox:\
 Configuration:\
 `ip: 192.168.122.123/24`\
 `gw: 192.168.122.1`\
-`username: root`\
+`username: root`
+
 error: "WARN: old systemd (<v232) detected, container won't run in a purge cgroupv2 enrivonment! Please see documentation -> container -> cgroup version.
 
 In KVM proxmox edit grub file (with making backup (for example cp grub grub1):\ 
@@ -87,7 +88,7 @@ then run the following command:\
 
 Start OxOOL Community:\
 `systemctl enable oxool`\
-`reboot`\
+`reboot`
 
 Reboot, login as root, and check if OxOOL Community edition starts normally:
 `netstat -tlnp`
