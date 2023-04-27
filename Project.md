@@ -91,9 +91,10 @@ Reboot, login as root, and check if OxOOL Community edition starts normally:
 
 It should look like this:\
 Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
-tcp        0      0 127.0.0.1:9981          0.0.0.0:*               LISTEN      1049/oxool          
-tcp6       0      0 :::9980                 :::*                    LISTEN      1049/oxool
+| Proto | Recv-Q | Send-Q | Local Address | Foreign Address | State | PID/Program name |
+|-------|--------|--------|---------------|-----------------|-------|------------------|
+| tcp | 0 | 0 | 127.0.0.1:9981 | 0.0.0.0:* | LISTEN | 1049/oxool |          
+|tcp6 | 0 | 0 | :::9980 | :::* | LISTEN | 1049/oxool |
 
 Pro-tip!
 
