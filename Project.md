@@ -70,7 +70,7 @@ Install CentOS as CT lxc in proxmox:\
 Configuration:\
 `ip: 192.168.122.123/24`\
 `gw: 192.168.122.1`\
-`username: centos7`\
+`username: root`\
 error: "WARN: old systemd (<v232) detected, container won't run in a purge cgroupv2 enrivonment! Please see documentation -> container -> cgroup version.
 `edit grub file vi /etc/default/grub and edit line to: GRUB_CMDLINE_LINUX_DEFAULT="systemd.unified_cgroup_hierarchy=0 quiet `\
 In KVM proxmox grub file 
