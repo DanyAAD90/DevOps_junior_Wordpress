@@ -61,7 +61,8 @@ need to installed "zabbix-agent2" because ubuntu 23.04 is wihout LTS.
 Current issue: Zabbix server does not work. zabbix-server-mysql : need libldap-2.5-0 (>= 2.5.4) but it is not possible to install. Recommend "snmpd" but it is not installed.
 
 Try to install CentOS 8 stream as VM in proxmox and then zabbix server on it:\
-`https://computingforgeeks.com/how-to-install-zabbix-on-rhel-centos-stream/`
+`https://computingforgeeks.com/how-to-install-zabbix-on-rhel-centos-stream/`\
+Its impossible install vm on proxmox on kvm, there is an error `kvm: warning: host doesn't support requested feature: CPUID.01H:EDX.vme [bit]1`
 
 Docker for wordpress:\
 `https://wpart.pl/docker-dla-wordpress/`
