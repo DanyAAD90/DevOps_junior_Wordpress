@@ -1,4 +1,4 @@
-Project display website www. Workflow shows:
+Project display website by Wordpress. Workflow shows:
 
 ```mermaid
 graph LR
