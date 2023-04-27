@@ -8,7 +8,7 @@ C --> D(Proxmox)
 D --> E(LXC Wordpress - including PHP+MySQL)
 E --> G(Display website)
 C --> F(Docker)
-C --> H
+D --> H(CentOS)
 H(Zabbix) --> E
 ```
 Configuration on ubuntu 23.04 shows:\
