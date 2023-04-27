@@ -110,9 +110,9 @@ PHP with required extensions
 MariaDB server
 
 error:\
-`bash: youm-config-manager: command not found`\
+`bash: yum-config-manager: command not found`\
 need to install:\
-`yum install yum-utils`\ 
+`yum install yum-utils`
 to execute yum-config-manager
 
 
