@@ -122,13 +122,14 @@ to execute yum-config-manager
 Congratulations! Zabbix has been configured.
 Configuration file "etc/zabbix/web/zabbix.conf.php" created.
 
-192.168.122.123/zabbix/
-Username: "Admin"
-Password: "zabbix" then change to yours password.
+Zabbix login address:\
+`192.168.122.123/zabbix/`\
+`Username: "Admin"`\
+`Password: "zabbix" then change to yours password.`
+
+Next step:
 
 Add Applications/Items/Triggers/Grapsh in Zabbix for CT wordpress to monitor that container. Awesome!
-
-
 
 
 
