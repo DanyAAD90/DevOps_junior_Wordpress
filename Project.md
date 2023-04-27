@@ -8,6 +8,8 @@ C --> D(Proxmox)
 D --> E(LXC Wordpress - including PHP+MySQL)
 E --> G(Display website)
 C --> F(Docker)
+B --> H(Centos)
+H --> I(Zabbix)
 ```
 Configuration on ubuntu 23.04 shows:\
 `inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp3s0`
