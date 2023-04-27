@@ -93,8 +93,10 @@ It should look like this:\
 Active Internet connections (only servers)
 | Proto | Recv-Q | Send-Q | Local Address | Foreign Address | State | PID/Program name |
 |-------|--------|--------|---------------|-----------------|-------|------------------|
-| tcp | 0 | 0 | 127.0.0.1:9981 | 0.0.0.0:* | LISTEN | 1049/oxool |          
-|tcp6 | 0 | 0 | :::9980 | :::* | LISTEN | 1049/oxool |
+| tcp | 0 | 0 | 127.0.0.1:9981 | 0.0.0.0:* | LISTEN | 268/oxool |
+| tcp | 0 | 0 | 0.0.0.0:22 | 0.0.0.0:* | LISTEN | 267/sshd |  
+|tcp6 | 0 | 0 | :::9980 | :::* | LISTEN | 268/oxool |
+|tcp6 | 0 | 0 | :::22 | :::* | LISTEN | 267/sshd |
 
 Pro-tip!
 
