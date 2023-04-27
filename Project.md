@@ -104,9 +104,16 @@ When steps above are finished, you can use "More"→"Convert to template" to gen
 
 Install Zabbix on CT centos7 core:\
 `https://computingforgeeks.com/how-to-install-zabbix-server-on-centos-7/`\
+Requirements:
+Apache web server
+PHP with required extensions
+MariaDB server
 
-
-
+error:\
+`bash: youm-config-manager: command not found`\
+need to install:\
+`yum install yum-utils`\ 
+to execute yum-config-manager
 
 
 Docker for wordpress:\
