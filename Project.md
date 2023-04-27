@@ -125,7 +125,7 @@ Configuration file "etc/zabbix/web/zabbix.conf.php" created.
 Username: "Admin"
 Password: "zabbix" then change to yours password.
 
-
+Add Applications/Items/Triggers/Grapsh in Zabbix for CT wordpress to monitor that container. Awesome!
 
 
 
