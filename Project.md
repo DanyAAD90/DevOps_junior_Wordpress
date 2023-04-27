@@ -72,8 +72,35 @@ Configuration:\
 `gw: 192.168.122.1`\
 `username: root`\
 error: "WARN: old systemd (<v232) detected, container won't run in a purge cgroupv2 enrivonment! Please see documentation -> container -> cgroup version.
-`edit grub file vi /etc/default/grub and edit line to: GRUB_CMDLINE_LINUX_DEFAULT="systemd.unified_cgroup_hierarchy=0 quiet `\
-In KVM proxmox grub file 
+
+In KVM proxmox edit grub file (with making backup (for example cp grub grub1):\ 
+`vi /etc/default/grub and edit line to: GRUB_CMDLINE_LINUX_DEFAULT="systemd.unified_cgroup_hierarchy=0 quiet `\
+then run the following command:\
+`yum install vim openssh* net-tools unzip wget -y`\
+`cd /etc/yum.repos.d`\
+`wget --no-check-certificate http://www.oxoffice.com.tw/yum.repo/oxool-community.repo`\
+`yum update -y`\
+`yum groupinstall "OxOOL Community Group" -y`\
+
+Start OxOOL Community:\
+`systemctl enable oxool`\
+`reboot`\
+
+Reboot, login as root, and check if OxOOL Community edition starts normally:
+`netstat -tlnp`\
+
+It should look like this:\
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:9981          0.0.0.0:*               LISTEN      1049/oxool          
+tcp6       0      0 :::9980                 :::*                    LISTEN      1049/oxool
+
+Pro-tip!
+
+When steps above are finished, you can use "More"→"Convert to template" to generate new LXC template that contains OxOOL Community edition.
+
+
+
 
 
 
