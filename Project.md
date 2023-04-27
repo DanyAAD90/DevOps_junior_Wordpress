@@ -68,5 +68,16 @@ Its impossible install vm on proxmox on kvm, there is an error `kvm: warning: ho
 
 Install CentOS as lxc in proxmox:\
 `https://docs.ossii.com.tw/books/oxoffice-online-technical-manual/page/installation-guide-for-centos-7-in-pve-lxc-%28community-edition%29`\
+Configuration:\
+`ip: 192.168.122.123/24`\
+`gw: 192.168.122.1`\
+`username: centos7`\
+error: "WARN: old systemd (<v232) detected, container won't run in a purge cgroupv2 enrivonment! Please see documentation -> container -> cgroup version.
+`edit grub file vi /etc/default/grub and edit line to: GRUB_CMDLINE_LINUX_DEFAULT="systemd.unified_cgroup_hierarchy=0 quiet `\
+In KVM proxmox grub file 
+
+
+
+
 Docker for wordpress:\
 `https://wpart.pl/docker-dla-wordpress/`
