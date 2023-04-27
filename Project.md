@@ -87,7 +87,7 @@ then run the following command:\
 
 Start OxOOL Community:\
 `systemctl enable oxool`\
-`reboot`
+`reboot`\
 
 Reboot, login as root, and check if OxOOL Community edition starts normally:
 `netstat -tlnp`
