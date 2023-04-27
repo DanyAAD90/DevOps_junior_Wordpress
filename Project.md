@@ -38,7 +38,7 @@ Went to firefox and write 192.168.122.63:8006 and hit enter. Then login with roo
 I installed wordpress from here: https://mirror.umd.edu/turnkeylinux/images/proxmox/ with name:\
 `debian-10-turnkey-wordpress_16.1-1_amd64.tar.gz`
 
-I Created LXC container with Wordpress
+I Created CT LXC container with Wordpress
 
 Useful materials you can find here:\
 `https://www.youtube.com/watch?v=nW7_jnBNIRU LAMP LXC`\
@@ -65,7 +65,7 @@ Try to install CentOS 8 stream as VM in proxmox and then zabbix server on it:\
 `https://computingforgeeks.com/how-to-install-zabbix-on-rhel-centos-stream/`\
 Its impossible install vm on proxmox on kvm, there is an error `kvm: warning: host doesn't support requested feature: CPUID.01H:EDX.vme [bit]1`
 
-Install CentOS as lxc in proxmox:\
+Install CentOS as CT lxc in proxmox:\
 `https://docs.ossii.com.tw/books/oxoffice-online-technical-manual/page/installation-guide-for-centos-7-in-pve-lxc-%28community-edition%29`\
 Configuration:\
 `ip: 192.168.122.123/24`\
