@@ -83,14 +83,14 @@ then run the following command:\
 `cd /etc/yum.repos.d`\
 `wget --no-check-certificate http://www.oxoffice.com.tw/yum.repo/oxool-community.repo`\
 `yum update -y`\
-`yum groupinstall "OxOOL Community Group" -y`\
+`yum groupinstall "OxOOL Community Group" -y`
 
 Start OxOOL Community:\
 `systemctl enable oxool`\
-`reboot`\
+`reboot`
 
 Reboot, login as root, and check if OxOOL Community edition starts normally:
-`netstat -tlnp`\
+`netstat -tlnp`
 
 It should look like this:\
 Active Internet connections (only servers)
