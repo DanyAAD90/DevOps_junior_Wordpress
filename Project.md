@@ -131,6 +131,8 @@ Next step:
 
 Add Applications/Items/Triggers/Grapsh in Zabbix for CT wordpress to monitor that container. Awesome!
 
+error with Availability for word_prox:\
+`Get value from agent failed: cannot connect to [[192.168.122.122]:10050]:[111] Connection refused`
 
 
 Docker for wordpress:\
