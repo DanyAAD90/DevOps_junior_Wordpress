@@ -137,3 +137,11 @@ error with Availability for word_prox:\
 
 Docker for wordpress:\
 `https://wpart.pl/docker-dla-wordpress/`
+
+
+Automation by Ansible:\
+
+python -m venv tutorial-env
+
+pip3 install proxmoxer --break-system-packages
+pip3 install virtualenv --break-system-packages
