@@ -149,3 +149,22 @@ pip3 install virtualenv --break-system-packages
 ansible localhost -m ping -e 'ansible_python_interpreter=/usr/bin/python3'
 ansible-playbook sample-playbook.yml -e 'ansible_python_interpreter=/usr/bin/python3'
 **ln -s /usr/bin/python3 /usr/bin/python**
+
+ansible trzeba urchamiać w python, za pomoca .venv/devops/ utworzonego wirtualnego srodowiska
+
+dev@ops: ~/ansible_lab/.venv/devops/bin$ source activate
+(devops) dev@ops: ~/ansible_lab$ ansible-playbook -i hosts main2.yml
+
+pip freeze |grep -i proxmox
+
+Dla własnej wygody i mniejszej frustracji lepiej stworzyc dla każdego projektu osobne środowisko pythonowe
+Bo ansible jest w pythonie uruchamiane
+
+which ansible
+which pip3 
+
+powinny byc w .venv/devops ścieżce
+
+
+
+
