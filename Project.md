@@ -182,3 +182,6 @@ ansible --version |grep "python version"
 python -m pip list
 python -m pip show proxmoxer
 
+ansible all -m ping
+
+ansible server01 -m setup -a "filter=ansible_distribution*"
