@@ -167,4 +167,5 @@ powinny byc w .venv/devops ścieżce
 
 to nie ma znaczenia w jakim miejscu uruchamiasz, nie trzeba wchodzic w .venv
 
+pip freeze -> sprawdza jakie sa moduły
 
