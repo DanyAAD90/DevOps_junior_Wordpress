@@ -186,3 +186,4 @@ python -m pip show proxmoxer
 ansible all -m ping
 
 ansible server01 -m setup -a "filter=ansible_distribution*"
+https://beitadmin.pl/kurs-ansible-pierwszy-playbook-cz-3/
