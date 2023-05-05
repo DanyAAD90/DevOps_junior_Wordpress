@@ -174,7 +174,8 @@ pip freeze -> sprawdza jakie sa moduły
   vars:
     ansible_python_interpreter: "/usr/bin/python3"
     
-    + komenda $ ansible-playbook main7.yml = działa
+    + komenda $ ansible-playbook main7.yml = działa (poza venvem)
+  
 
 ---------------
 ansible-galaxy collection list
