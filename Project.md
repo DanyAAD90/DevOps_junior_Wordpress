@@ -148,3 +148,4 @@ pip3 install virtualenv --break-system-packages
 
 ansible localhost -m ping -e 'ansible_python_interpreter=/usr/bin/python3'
 ansible-playbook sample-playbook.yml -e 'ansible_python_interpreter=/usr/bin/python3'
+**ln -s /usr/bin/python3 /usr/bin/python**
