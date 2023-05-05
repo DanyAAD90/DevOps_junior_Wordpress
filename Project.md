@@ -165,6 +165,6 @@ which pip3
 
 powinny byc w .venv/devops ścieżce
 
-
+to nie ma znaczenia w jakim miejscu uruchamiasz, nie trzeba wchodzic w .venv
 
 
