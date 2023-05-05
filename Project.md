@@ -169,3 +169,16 @@ to nie ma znaczenia w jakim miejscu uruchamiasz, nie trzeba wchodzic w .venv
 
 pip freeze -> sprawdza jakie sa moduły
 
+[main7.yml]
+- hosts: all
+  vars:
+    ansible_python_interpreter: "/usr/bin/python3"
+    
+    + komenda $ ansible-playbook main7.yml = działa
+
+---------------
+ansible-galaxy collection list
+ansible --version |grep "python version"
+python -m pip list
+python -m pip show proxmoxer
+
