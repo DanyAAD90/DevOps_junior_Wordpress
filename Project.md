@@ -3,6 +3,7 @@ Project display website by Wordpress. Workflow shows:
 ```mermaid
 graph LR
 A[Linux MINT 21.1] --> B(Virtualbox 6.1)
+B --> J(Proxmox)
 B -- ping ok --> C(Ubuntu23.04)
 C -- KVM qemu --> D(Proxmox)
 D --> E(CT Wordpress - including PHP+MySQL)
