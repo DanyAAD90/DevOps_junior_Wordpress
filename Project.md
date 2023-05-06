@@ -261,7 +261,7 @@ tak narazie działa: \
 1. idziemy do ścieżki:\
 `cd '/home/dev/ansible_lab/.venv/devops/bin/'`\
 2. odpalamy komende:\
-`source activate'\
+`source activate`\
 3. Następnie:\
 `ansible-playbook -i hosts main6.yml = tworzy CT`\
 `ansible-playbook -i hosts main61.yml = uruchamia CT`
