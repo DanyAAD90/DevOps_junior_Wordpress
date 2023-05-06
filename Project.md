@@ -202,3 +202,4 @@ ansible-playbook -i hosts main7.yml -vv
 
 DZIAŁA
 -------------------
+ansible all -m ping -vv => diagnostyka wszystkiego
