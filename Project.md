@@ -214,4 +214,17 @@ python3 -m pip list \
 
 fatal: [192.168.122.63]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 192.168.122.63 closed.\r\n", "module_stdout": "/bin/sh: 1: /usr/local/lib/python3.9/dist-packages: Permission denied\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 126} \
 
-jest coraz lepiej
+jest coraz lepiej \
+
+proxmoxer na proxmox zainstalowany :)
+
+[hosts]: \
+------------------
+[server01] \
+#192.168.0.37 ansible_ssh_pass=123zxc ansible_ssh_user=root \
+192.168.122.63 ansible_ssh_pass=123zxc ansible_ssh_user=root \
+
+[server01:vars] \
+ansible_python_interpreter=/usr/bin/python3 \
+------------------
+
