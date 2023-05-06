@@ -242,3 +242,4 @@ cat 100.conf = konfiguracja CT \
 community.general.proxmox Supported parameters include: api_host, api_password, api_token_id, api_token_secret, api_user, clone, clone_type, cores, cpus, cpuunits, description, disk, features, force, hookscript, hostname, ip_address, memory, mounts, nameserver, netif, node, onboot, ostemplate, password, pool, proxmox_default_behavior, pubkey, purge, searchdomain, state, storage, swap, tags, timeout, unprivileged, validate_certs, vmid.
 
 ----------
+https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_module.html 
