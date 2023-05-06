@@ -1,0 +1,16 @@
+- name: Test connectivity to target servers
+  hosts: all
+  run_once: true
+  gather_facts: false
+
+  tasks:
+    - name: tworzenie kontenera
+      community.general.proxmox_kvm: 
+        api_host: 'devops.local'
+        api_user: 'root@pam'
+        api_password: '123zxc'
+        api_token_id: 'token_id1'
+        api_token_secret: '71e81203-5445-4eb0-8ec4-fd5c87cedd54'
+        node: 'devops'
+        vmid: '201'
+
