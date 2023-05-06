@@ -205,3 +205,13 @@ DZIAŁA
 ansible all -m ping -vv => diagnostyka wszystkiego
 
 na proxmoxie trzeba zainstalować proxmoxera XD
+
+instalacja pip na proxmoxie:\
+apt install python3-pip	\
+pip3 install proxmoxer \
+pip3 install requests \
+python3 -m pip list \
+
+fatal: [192.168.122.63]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 192.168.122.63 closed.\r\n", "module_stdout": "/bin/sh: 1: /usr/local/lib/python3.9/dist-packages: Permission denied\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 126} \
+
+jest coraz lepiej
