@@ -203,3 +203,5 @@ ansible-playbook -i hosts main7.yml -vv
 DZIAŁA
 -------------------
 ansible all -m ping -vv => diagnostyka wszystkiego
+
+na proxmoxie trzeba zainstalować proxmoxera XD
