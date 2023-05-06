@@ -1,0 +1,9 @@
+[server01]
+#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root
+192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root
+
+[server01:vars]
+#ansible_python_interpreter=/home/dev/ansible_lab/tutorial-env/bin/python3
+#ansible_python_interpreter=/usr/local/lib/python3.9/dist-packages
+ansible_python_interpreter=/usr/bin/python3
+
