@@ -234,3 +234,6 @@ pveam list local \
 pvesm status \
 nano /etc/pve/storage.cfg \
 https://pve.proxmox.com/pve-docs/chapter-pct.html = rootfs trzeba skonfigurowac jakos \
+
+cd /etc/pve/local/lxc/ \
+cat 100.conf = konfiguracja CT \
