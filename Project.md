@@ -194,9 +194,9 @@ proxmox bezpośrednio na Virtualbox
 192.168.0.37
 
 ---
-- hosts: all
-  vars:
-    ansible_python_interpreter: "/home/dev/ansible_lab/.venv/devops/bin/python3"
+- hosts: all\
+  vars:\
+    ansible_python_interpreter: "/home/dev/ansible_lab/.venv/devops/bin/python3"\
 
 ansible-playbook -i hosts main7.yml -vv
 
