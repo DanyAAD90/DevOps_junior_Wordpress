@@ -233,3 +233,4 @@ https://pve.proxmox.com/wiki/Linux_Container
 pveam list local \
 pvesm status \
 nano /etc/pve/storage.cfg \
+https://pve.proxmox.com/pve-docs/chapter-pct.html = rootfs trzeba skonfigurowac jakos \
