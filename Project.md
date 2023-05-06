@@ -4,7 +4,7 @@ Project display website by Wordpress. Workflow shows:
 graph LR
 A[Linux MINT 21.1] --> B(Virtualbox 6.1)
 B --> C(Ubuntu23.04)
-C --> D(Proxmox)
+C -- KVM (qemu) --> D(Proxmox)
 D --> E(CT Wordpress - including PHP+MySQL)
 E --> G(Display website)
 C --> F(Docker)
