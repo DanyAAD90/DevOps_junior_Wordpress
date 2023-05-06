@@ -230,4 +230,6 @@ ansible_python_interpreter=/usr/bin/python3 \
 -------------------
 https://pve.proxmox.com/wiki/Linux_Container
 
-pveam list local
+pveam list local \
+pvesm status \
+nano /etc/pve/storage.cfg \
