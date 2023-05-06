@@ -226,5 +226,6 @@ proxmoxer na proxmox zainstalowany :)
 
 [server01:vars] \
 ansible_python_interpreter=/usr/bin/python3 \
-------------------
+
+-------------------
 
