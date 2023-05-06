@@ -243,3 +243,5 @@ community.general.proxmox Supported parameters include: api_host, api_password, 
 
 ----------
 https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_module.html 
+
+https://forum.proxmox.com/threads/storage-local-does-not-support-container-directories-when-creating-new-containter.68317/
