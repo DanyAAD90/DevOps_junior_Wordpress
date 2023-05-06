@@ -245,3 +245,22 @@ community.general.proxmox Supported parameters include: api_host, api_password, 
 https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_module.html 
 
 https://forum.proxmox.com/threads/storage-local-does-not-support-container-directories-when-creating-new-containter.68317/
+
+https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_disk_module.html
+
+jak wrzucić: \
+
+--rootfs local-lvm:8 \ 
+
+do yaml'a ??
+
+----------------
+Porządkowanie
+--
+tak narazie działa: \
+1. idziemy do ścieżki:\
+`cd '/home/dev/ansible_lab/.venv/devops/bin/'`\
+2. odpalamy:\
+`ansible-playbook -i hosts main6.yml = tworzy CT'\
+'ansible-playbook -i hosts main61.yml = uruchamia CT'
+
