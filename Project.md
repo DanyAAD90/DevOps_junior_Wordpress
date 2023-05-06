@@ -179,12 +179,12 @@ pip freeze -> sprawdza jakie sa moduły
   
 
 ---------------
-ansible-galaxy collection list
-ansible --version |grep "python version"
-python -m pip list
-python -m pip show proxmoxer
+ansible-galaxy collection list\
+ansible --version |grep "python version"\
+python -m pip list\
+python -m pip show proxmoxer\
 
-ansible all -m ping
+ansible all -m ping\
 
-ansible server01 -m setup -a "filter=ansible_distribution*"
+ansible server01 -m setup -a "filter=ansible_distribution*"\
 https://beitadmin.pl/kurs-ansible-pierwszy-playbook-cz-3/
