@@ -1,0 +1,30 @@
+- name: Test connectivity to target servers
+  hosts: all
+  run_once: true
+  gather_facts: false
+  tasks:
+    - name: Create CT
+      community.general.proxmox: 
+        api_host: devops
+        api_user: root@pam
+        api_password: 123zxc
+        api_token_id: token_id1
+        api_token_secret: 71e81203-5445-4eb0-8ec4-fd5c87cedd54
+        node: devops
+        hostname: testct
+        password: 123zxc
+        ostemplate: 'local:vztmpl/alpine-3.17-default_20221129_amd64.tar.xz'
+        vmid: '206'
+        description: created with ansible
+        cores: 2
+        timeout: 60
+        netif: '{"net0":"name=eth0,ip=dhcp,ip6=dhcp,bridge=vmbr0"}'
+        disk: 8
+        features: nesting=1
+        memory: 2048
+        swap: 1024
+        nameserver: 192.168.122.1
+        searchdomain: devops.local
+        unprivileged: 1
+        storage: local
+        onboot: true
