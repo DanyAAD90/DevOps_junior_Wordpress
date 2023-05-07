@@ -207,18 +207,16 @@ during this error:\
 
 Changed my `hosts` file to:\
 
-`[server01]\
-#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root\
-192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root\
-[server01:vars]\
-#ansible_python_interpreter=/home/dev/ansible_lab/tutorial-env/bin/python3\
-#ansible_python_interpreter=/usr/local/lib/python3.9/dist-packages\
-ansible_python_interpreter=/usr/bin/python3`
+`[server01]`\
+`#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root`\
+`192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root`\
+`[server01:vars]`\
+`ansible_python_interpreter=/usr/bin/python3`
 
 Useful link:\
 `https://pve.proxmox.com/wiki/Linux_Container`
 
-Login to the proxmox server and check:
+Login to the proxmox server and check:\
 `ssh root@192.168.122.63`
 `pveam list local` \
 `pvesm status` \
@@ -226,7 +224,7 @@ Login to the proxmox server and check:
 `cd /etc/pve/local/lxc/` \
 `cat 100.conf` configuration CT \
 
-to set rootfs if main6.yml add:
+to set rootfs if main6.yml add:\
 `Disk: 8` which created disk with size=8G\
 `https://pve.proxmox.com/pve-docs/chapter-pct.html` 
 
