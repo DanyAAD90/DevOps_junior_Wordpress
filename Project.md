@@ -5,15 +5,14 @@ graph LR
 A[Linux MINT 21.1] --> B(Virtualbox 6.1)
 B --> J(Proxmox)
 B --> C(Ubuntu23.04)
-C --> D(KVM qemu)
-D --> E(Proxmox)
-E --> F(CT Wordpress - including PHP+MySQL)
-F --> H(Display website)
-D --> G(Docker)
-E --> I(CT Centos7)
-I --> J(Zabbix)
-I --> F
-F --> J
+C -- KVM qemu --> D(Proxmox)
+D --> E(CT Wordpress - including PHP+MySQL)
+E --> G(Display website)
+C --> F(Docker)
+D --> H(CT Centos7)
+H --> I(Zabbix)
+I --> E
+E --> I
 ```
 Configuration on ubuntu 23.04 shows:\
 `inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp3s0`
