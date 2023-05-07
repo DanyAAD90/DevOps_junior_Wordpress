@@ -205,12 +205,11 @@ Installation proxmoxer on proxmox:\
 during this error:\
 `fatal: [192.168.122.63]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 192.168.122.63 closed.\r\n", "module_stdout": "/bin/sh: 1: /usr/local/lib/python3.9/dist-packages: Permission denied\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 126} \`
 
-Changed my `hosts` file to:
+Changed my `hosts` file to:\
 
 `[server01]
 #192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root
 192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root
-
 [server01:vars]
 #ansible_python_interpreter=/home/dev/ansible_lab/tutorial-env/bin/python3
 #ansible_python_interpreter=/usr/local/lib/python3.9/dist-packages
