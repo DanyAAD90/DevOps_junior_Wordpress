@@ -185,12 +185,11 @@ Created another proxmox directly in Virtualbox with ip:\
 
 check proxmoxer in venv path:\
 [hosts]
-- hosts: all\
-  vars:\
-    ansible_python_interpreter: "/home/dev/ansible_lab/.venv/devops/bin/python3"
+`- hosts: all`\
+  `vars:`\
+    `ansible_python_interpreter: "/home/dev/ansible_lab/.venv/devops/bin/python3"`
 
 with command: `ansible-playbook -i hosts main7.yml -vv` is working fine.
-
 
 `ansible all -m ping -vv` is checking everything
 
@@ -222,7 +221,7 @@ Login to the proxmox server and check:\
 `pvesm status` \
 `nano /etc/pve/storage.cfg` \
 `cd /etc/pve/local/lxc/` \
-`cat 100.conf` configuration CT \
+`cat 100.conf` configuration CT
 
 to set rootfs if main6.yml add:\
 `Disk: 8` which created disk with size=8G\
