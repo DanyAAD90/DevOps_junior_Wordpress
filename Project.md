@@ -142,93 +142,82 @@ Docker for wordpress:\
 
 Automation by Ansible:
 --
-python -m venv tutorial-env
+First of all, need to install virtualenv and required packages `proxmoxer` and `requests`:
+`python -m venv tutorial-env`\
+`pip3 install proxmoxer --break-system-packages`\
+`pip3 install virtualenv --break-system-packages`
 
-pip3 install proxmoxer --break-system-packages
-pip3 install virtualenv --break-system-packages
+Pro-tip!
+Every project should be realized by python venv. I created venv in location:\
+`~/ansible_lab/.venv/devops/bin`\
+`dev@ops: ~/ansible_lab/.venv/devops/bin$ source activate`\
 
-ansible localhost -m ping -e 'ansible_python_interpreter=/usr/bin/python3'
-ansible-playbook sample-playbook.yml -e 'ansible_python_interpreter=/usr/bin/python3'
-**ln -s /usr/bin/python3 /usr/bin/python**
+check a few important things:\
+`pip freeze |grep -i proxmox`\
+`pip freeze` checking every modules\
+`which ansible`\
+`which pip3`
 
-ansible trzeba urchamiać w python, za pomoca .venv/devops/ utworzonego wirtualnego srodowiska
+It should be in `.venv/devops/bin` directory.
 
-dev@ops: ~/ansible_lab/.venv/devops/bin$ source activate
-(devops) dev@ops: ~/ansible_lab$ ansible-playbook -i hosts main2.yml
-
-pip freeze |grep -i proxmox
-
-Dla własnej wygody i mniejszej frustracji lepiej stworzyc dla każdego projektu osobne środowisko pythonowe
-Bo ansible jest w pythonie uruchamiane
-
-which ansible
-which pip3 
-
-powinny byc w .venv/devops ścieżce
-
-to nie ma znaczenia w jakim miejscu uruchamiasz, nie trzeba wchodzic w .venv
-
-pip freeze -> sprawdza jakie sa moduły
+check proxmoxer path in proxmox:
 
 [main7.yml]
 - hosts: all
   vars:
     ansible_python_interpreter: "/usr/bin/python3"
     
-    + komenda $ ansible-playbook main7.yml = działa (poza venvem)
+    with command `$ ansible-playbook main7.yml` is working fine
   
+Next useful list pack:\
+`ansible-galaxy collection list`\
+`ansible --version |grep "python version"`\
+`python -m pip list`\
+`python -m pip show proxmoxer`
 
----------------
-ansible-galaxy collection list\
-ansible --version |grep "python version"\
-python -m pip list\
-python -m pip show proxmoxer\
+`ansible all -m ping`
 
-ansible all -m ping\
+`ansible server01 -m setup -a "filter=ansible_distribution*"`\
+`https://beitadmin.pl/kurs-ansible-pierwszy-playbook-cz-3/`
 
-ansible server01 -m setup -a "filter=ansible_distribution*"\
-https://beitadmin.pl/kurs-ansible-pierwszy-playbook-cz-3/
+Created another proxmox directly in Virtualbox with ip:\
+`192.168.0.37`
 
-----------------
-proxmox bezpośrednio na Virtualbox
-192.168.0.37
-
----
+check proxmoxer in venv path:\
+[hosts]
 - hosts: all\
   vars:\
-    ansible_python_interpreter: "/home/dev/ansible_lab/.venv/devops/bin/python3"\
+    ansible_python_interpreter: "/home/dev/ansible_lab/.venv/devops/bin/python3"
 
-ansible-playbook -i hosts main7.yml -vv
+with command: `ansible-playbook -i hosts main7.yml -vv` is working fine.
 
-DZIAŁA
--------------------
-ansible all -m ping -vv => diagnostyka wszystkiego
 
-na proxmoxie trzeba zainstalować proxmoxera XD
+`ansible all -m ping -vv` is checking everything
 
-instalacja pip na proxmoxie:\
-apt install python3-pip	\
-pip3 install proxmoxer \
-pip3 install requests \
-python3 -m pip list \
+After all i found information that `proxmoxer` should be installed on `proxmox` server and on the `ubuntu 23.04` 
 
-fatal: [192.168.122.63]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 192.168.122.63 closed.\r\n", "module_stdout": "/bin/sh: 1: /usr/local/lib/python3.9/dist-packages: Permission denied\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 126} \
+Installation proxmoxer on proxmox:\
+`apt install python3-pip`	\
+`pip3 install proxmoxer` \
+`pip3 install requests` \
+`python3 -m pip list` 
 
-jest coraz lepiej \
+during this error:\
+`fatal: [192.168.122.63]: FAILED! => {"changed": false, "module_stderr": "Shared connection to 192.168.122.63 closed.\r\n", "module_stdout": "/bin/sh: 1: /usr/local/lib/python3.9/dist-packages: Permission denied\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 126} \`
 
-proxmoxer na proxmox zainstalowany :)
+Changed my `hosts` file to:
 
-[hosts]: \
-------------------
-[server01] \
-#192.168.0.37 ansible_ssh_pass=123zxc ansible_ssh_user=root \
-192.168.122.63 ansible_ssh_pass=123zxc ansible_ssh_user=root \
+`[server01]
+#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root
+192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root
 
-[server01:vars] \
-ansible_python_interpreter=/usr/bin/python3 \
+[server01:vars]
+#ansible_python_interpreter=/home/dev/ansible_lab/tutorial-env/bin/python3
+#ansible_python_interpreter=/usr/local/lib/python3.9/dist-packages
+ansible_python_interpreter=/usr/bin/python3`
 
--------------------
-https://pve.proxmox.com/wiki/Linux_Container
+Useful link:\
+`https://pve.proxmox.com/wiki/Linux_Container`
 
 pveam list local \
 pvesm status \
