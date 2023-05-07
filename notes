@@ -1,0 +1,5 @@
+add directory of proxmoxer on proxmox:\
+`ansible localhost -m ping -e 'ansible_python_interpreter=/usr/bin/python3'`
+ansible-playbook sample-playbook.yml -e 'ansible_python_interpreter=/usr/bin/python3'
+**ln -s /usr/bin/python3 /usr/bin/python**
+
