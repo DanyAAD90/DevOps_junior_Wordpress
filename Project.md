@@ -12,7 +12,7 @@ F --> H(Display website)
 D --> G(Docker)
 E --> I(CT Centos7)
 I --> J(Zabbix)
-J --> F
+I --> F
 F --> J
 ```
 Configuration on ubuntu 23.04 shows:\
