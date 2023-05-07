@@ -207,51 +207,47 @@ during this error:\
 
 Changed my `hosts` file to:\
 
-`[server01]
-#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root
-192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root
-[server01:vars]
-#ansible_python_interpreter=/home/dev/ansible_lab/tutorial-env/bin/python3
-#ansible_python_interpreter=/usr/local/lib/python3.9/dist-packages
+`[server01]\
+#192.168.0.37 ansible_ssh_pass=xxx ansible_ssh_user=root\
+192.168.122.63 ansible_ssh_pass=xxx ansible_ssh_user=root\
+[server01:vars]\
+#ansible_python_interpreter=/home/dev/ansible_lab/tutorial-env/bin/python3\
+#ansible_python_interpreter=/usr/local/lib/python3.9/dist-packages\
 ansible_python_interpreter=/usr/bin/python3`
 
 Useful link:\
 `https://pve.proxmox.com/wiki/Linux_Container`
 
-pveam list local \
-pvesm status \
-nano /etc/pve/storage.cfg \
-https://pve.proxmox.com/pve-docs/chapter-pct.html = rootfs trzeba skonfigurowac jakos \
+Login to the proxmox server and check:
+`ssh root@192.168.122.63`
+`pveam list local` \
+`pvesm status` \
+`nano /etc/pve/storage.cfg` \
+`cd /etc/pve/local/lxc/` \
+`cat 100.conf` configuration CT \
 
-cd /etc/pve/local/lxc/ \
-cat 100.conf = konfiguracja CT \
+to set rootfs if main6.yml add:
+`Disk: 8` which created disk with size=8G\
+`https://pve.proxmox.com/pve-docs/chapter-pct.html` 
 
-----------
-community.general.proxmox Supported parameters include: api_host, api_password, api_token_id, api_token_secret, api_user, clone, clone_type, cores, cpus, cpuunits, description, disk, features, force, hookscript, hostname, ip_address, memory, mounts, nameserver, netif, node, onboot, ostemplate, password, pool, proxmox_default_behavior, pubkey, purge, searchdomain, state, storage, swap, tags, timeout, unprivileged, validate_certs, vmid.
-
-----------
-https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_module.html 
-
-https://forum.proxmox.com/threads/storage-local-does-not-support-container-directories-when-creating-new-containter.68317/
-
-https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_disk_module.html
-
-jak wrzucić: \
-
---rootfs local-lvm:8 \ 
-
-do yaml'a ??
-
-----------------
-Porządkowanie
+Avaiable parameters:
 --
-tak narazie działa: \
-1. idziemy do ścieżki:\
-`cd '/home/dev/ansible_lab/.venv/devops/bin/'`
-2. odpalamy komende:\
-`source activate`
-3. Następnie:\
-`ansible-playbook -i hosts main6.yml = tworzy CT`\
-`ansible-playbook -i hosts main61.yml = uruchamia CT`
+`community.general.proxmox Supported parameters include: api_host, api_password, api_token_id, api_token_secret, api_user, clone, clone_type, cores, cpus, cpuunits, description, disk, features, force, hookscript, hostname, ip_address, memory, mounts, nameserver, netif, node, onboot, ostemplate, password, pool, proxmox_default_behavior, pubkey, purge, searchdomain, state, storage, swap, tags, timeout, unprivileged, validate_certs, vmid.`
 
-żeby utworzy kilka kontenerów trzeba jakoś wsadzić if'a do yaml....
+`https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_module.html`
+
+`https://forum.proxmox.com/threads/storage-local-does-not-support-container-directories-when-creating-new-containter.68317/`
+
+`https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_disk_module.html`
+
+How it works at the moment:
+--
+1. Go to path:\
+`cd '/home/dev/ansible_lab/.venv/devops/bin/'`
+2. Execute command:\
+`source activate`
+3. Then:\
+`ansible-playbook -i hosts main6.yml = Creat CT`\
+`ansible-playbook -i hosts main61.yml = Start CT`
+
+How to run f.e. 10 CT by one ansible yaml code?
