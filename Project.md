@@ -266,3 +266,4 @@ tak narazie działa: \
 `ansible-playbook -i hosts main6.yml = tworzy CT`\
 `ansible-playbook -i hosts main61.yml = uruchamia CT`
 
+żeby utworzy kilka kontenerów trzeba jakoś wsadzić if'a do yaml....
