@@ -4,7 +4,7 @@
   gather_facts: false
 
   tasks:
-    - name: tworzenie kontenera
+    - name: Create VM
       community.general.proxmox_kvm: 
         api_host: 'devops.local'
         api_user: 'root@pam'
