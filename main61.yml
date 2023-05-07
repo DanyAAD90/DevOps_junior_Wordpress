@@ -1,0 +1,14 @@
+---
+- name: Start
+  hosts: all
+  tasks:
+    - name: Start container
+      community.general.proxmox:
+        vmid: 206
+        api_user: root@pam
+        api_password: 123zxc
+        api_host: devops
+        api_token_id: yyy
+        api_token_secret: xxx
+        state: started
+        timeout: 90
